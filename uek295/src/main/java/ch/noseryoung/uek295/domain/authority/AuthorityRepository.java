@@ -1,4 +1,8 @@
 package ch.noseryoung.uek295.domain.authority;
 
-public class AuthorityRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AuthorityRepository extends JpaRepository<Authority, Integer> {
 }
