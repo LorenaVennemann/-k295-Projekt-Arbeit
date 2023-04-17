@@ -13,7 +13,7 @@ public class BlogEntry {
 
   private String text;
 
-  @ManyToOne(fetch = FetchType.LAZY)
+  @ManyToOne(fetch = FetchType.EAGER)
   private Author author;
   private Date date;
 
