@@ -47,5 +47,3 @@ The documentation for Endpoints can be viewed after starting the program with th
 http://localhost:8080/swagger-ui/index.html oder [hier](http://localhost:8080/swagger-ui/index.html) anklicken
 
 **The database must also be running to start the application**.
-
-Translated with www.DeepL.com/Translator (free version)
