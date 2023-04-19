@@ -17,9 +17,11 @@ These softwares are used to make the program **run**:
 
 To get the program running, you first need to install the repo clone
 
-bash
+
+```bash
 git clone https://github.com/LorenaVennemann/uek295-Projekt-Arbeit.git
 
+```
 
 One starts Docker up and runs this command to create and run a Postgres Docker container:
 
