@@ -20,7 +20,7 @@ public class BlogEntryController {
   }
 
   @GetMapping("/")
-  @Operation(summary = "Fetches all BlogEntry", description = "lorem Ipsum")
+  @Operation(summary = "Fetches all Entry in the database", description = "Fetches all Entry and returns JSON with status code 200 when succesed")
   @PreAuthorize("hasAuthority('READ')")
   public ResponseEntity<List<BlogEntry>> getAllBlogEntries() {
     List<BlogEntry> blogEntries = blogEntryService.getAllBlogEntries();
@@ -28,6 +28,7 @@ public class BlogEntryController {
   }
 
   @GetMapping("/{id}")
+  @Operation(summary = "Fetches a Entry in the database with a given id", description = "Fetches all Entry and returns JSON with status code 200 when succesed")
   @PreAuthorize("hasAuthority('READ')")
   public ResponseEntity<BlogEntry> getBlogEntryById(@PathVariable Long id) {
     BlogEntry blogEntry = blogEntryService.getBlogEntryById(id);
@@ -35,6 +36,7 @@ public class BlogEntryController {
   }
 
   @PostMapping
+  @Operation(summary = "Creates a entry and saves it into the database", description = "Fetches all Entry and returns JSON with status code 200 when succesed")
   @PreAuthorize("hasAuthority('CREATE')")
   public ResponseEntity<Void> addBlogEntry(@Valid @RequestBody BlogEntry blogEntry) {
     blogEntryService.addBlogEntry(blogEntry);
@@ -42,6 +44,7 @@ public class BlogEntryController {
   }
 
   @PutMapping("/{id}")
+  @Operation(summary = "Updates an Entry in the Database with a given id", description = "Fetches all Entry and returns JSON with status code 200 when succesed")
   @PreAuthorize("hasAuthority('UPDATE')")
   public ResponseEntity<Void> updateBlogEntry(@PathVariable Long id, @Valid @RequestBody BlogEntry updatedBlogEntry) {
     blogEntryService.updateBlogEntry(id, updatedBlogEntry);
@@ -49,6 +52,7 @@ public class BlogEntryController {
   }
 
   @DeleteMapping("/{id}")
+  @Operation(summary = "Deletes a given entry with a given id", description = "Fetches all Entry and returns JSON with status code 200 when succesed")
   @PreAuthorize("hasAuthority('DELETE')")
   public ResponseEntity<Void> deleteBlogEntry(@PathVariable Long id) {
     blogEntryService.deleteBlogEntry(id);
