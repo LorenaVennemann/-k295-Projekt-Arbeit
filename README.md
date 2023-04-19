@@ -19,11 +19,11 @@ To get the program running, you first need to install the repo clone
 
 bash
 git clone https://github.com/LorenaVennemann/uek295-Projekt-Arbeit.git
-```
+
 
 One starts Docker up and runs this command to create and run a Postgres Docker container:
 
-``bash
+```bash
 docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres --name uek295db postgres
 ```
 
@@ -33,7 +33,7 @@ docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres --name uek295db postgre
 
 To check if the Docker container is running, you can use this command to check it:
 
-``bash
+```bash
 docker ps
 ```
 You can also check it with Docker Desktop GUI
