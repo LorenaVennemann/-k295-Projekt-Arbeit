@@ -17,7 +17,7 @@ These softwares are used to make the program **run**:
 
 To get the program running, you first need to install the repo clone
 
-``bash
+bash
 git clone https://github.com/LorenaVennemann/uek295-Projekt-Arbeit.git
 ```
 
@@ -36,14 +36,13 @@ To check if the Docker container is running, you can use this command to check i
 ``bash
 docker ps
 ```
-
 You can also check it with Docker Desktop GUI
 
 In Intellij you should only click on the green run sign, if this is not the case you can click from the Gradle tab, under applications and `bootRun`.
 
 The documentation for Endpoints can be viewed after starting the program with this link:
 
-http://localhost:8080/swagger-ui/index.html or click [here](http://localhost:8080/swagger-ui/index.html)
+http://localhost:8080/swagger-ui/index.html oder [hier](http://localhost:8080/swagger-ui/index.html) anklicken
 
 **The database must also be running to start the application**.
 
