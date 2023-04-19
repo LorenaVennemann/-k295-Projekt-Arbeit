@@ -1,13 +1,13 @@
-# uek295-Projekt-Arbeit
+# uek295 project work
 # Documentation
 
 ## Description
 
-Dieses Projekt geht es darum, ein RESTAPI Applikation zu erstellen. Es wurde mit Springboot erstellt.
+This project is about creating a RESTAPI application. It was created using Springboot.
 
 ## Prerequisite
 
-Es werden diese Softwares benutzt, um das Programm zum  **laufen** zu lassen:
+These softwares are used to make the program **run**:
 
 - Docker [Download Link](https://docs.docker.com/get-docker/)
 - Intellij [Download Link](https://www.jetbrains.com/idea/)
@@ -15,34 +15,36 @@ Es werden diese Softwares benutzt, um das Programm zum  **laufen** zu lassen:
 
 ## Installation
 
-Um das Programm zum laufen zu lassen, muss man zuerst das Repo Clone
+To get the program running, you first need to install the repo clone
 
-```bash
+``bash
 git clone https://github.com/LorenaVennemann/uek295-Projekt-Arbeit.git
 ```
 
-Man startet Docker auf und lauft dieses Befehl, um ein Postgres Docker Container erstellen und laufen lassen:
+One starts Docker up and runs this command to create and run a Postgres Docker container:
 
-```bash
+``bash
 docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres --name uek295db postgres
 ```
 
-- Name: uek295db
+- name: uek295db
 - POSTGRES_PASSWORD: postgres
 - port: 5432
 
-Um zu nachschauen, ob das Docker Container lauft, kann man mit diesem Befehl es nachschauen:
+To check if the Docker container is running, you can use this command to check it:
 
-```bash
+``bash
 docker ps
 ```
 
-Man kann es auch mit Docker Desktop GUI nachschauen
+You can also check it with Docker Desktop GUI
 
-Im Intellij sollte man nur auf den Grünen lauf zeichen anclicken, wenn das der Fall nicht ist kann man vom Gradle Tab, unter applikationen und `bootRun` klicken.
+In Intellij you should only click on the green run sign, if this is not the case you can click from the Gradle tab, under applications and `bootRun`.
 
-Die Documentation zu Endpoints kann man nach starten vom Programm mit diesem Link ansehen:
+The documentation for Endpoints can be viewed after starting the program with this link:
 
-http://localhost:8080/swagger-ui/index.html oder [hier](http://localhost:8080/swagger-ui/index.html) anklicken
+http://localhost:8080/swagger-ui/index.html or click [here](http://localhost:8080/swagger-ui/index.html)
 
-**Die Datenbank muss auch laufen, um die Applikation zu starten**
+**The database must also be running to start the application**.
+
+Translated with www.DeepL.com/Translator (free version)
